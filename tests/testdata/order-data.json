@@ -1,0 +1,12 @@
+{
+  "productName": "ADIDAS ORIGINAL",
+  "paymentMethod": "Credit Card",
+  "cardNumber": "4542 9931 9292 2293",
+  "expiryMonth": "01",
+  "expiryYear": "16",
+  "cvv": "123",
+  "nameOnCard": "Sameer Akhtar",
+  "country": "India",
+  "quantity": 1,
+  "price": "$ 11500"
+}

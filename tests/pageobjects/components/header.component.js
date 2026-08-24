@@ -8,7 +8,7 @@ class HeaderComponent extends BasePage {
     super(page);
     this.homeButton = page.getByRole('button', { name: /HOME/ });
     this.ordersButton = page.getByRole('button', { name: /ORDERS/ });
-    this.cartButton = page.getByRole('button', { name: /^.*Cart/ });
+    this.cartButton = page.getByRole('button', { name: /^(?!.*Add To).*Cart(?: \d+)?$/ });
     this.signOutButton = page.getByRole('button', { name: 'Sign Out' });
   }
 

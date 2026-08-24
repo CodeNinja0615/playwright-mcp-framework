@@ -12,13 +12,15 @@ class CheckoutPage extends BasePage {
     this.creditCardNumberInput = page.getByText('Credit Card Number', { exact: true }).locator('..').getByRole('textbox');
     this.expiryMonthSelect = page.locator('select.input.ddl').first();
     this.expiryYearSelect = page.locator('select.input.ddl').last();
+    this.cvvInput = page.getByText('CVV Code ?', { exact: true }).locator('..').getByRole('textbox');
     this.nameOnCardInput = page.getByText('Name on Card', { exact: true }).locator('..').getByRole('textbox');
     this.couponInput = page.getByRole('textbox', { name: 'coupon' });
     this.applyCouponButton = page.getByRole('button', { name: 'Apply Coupon' });
     this.shippingSection = page.getByText('Shipping Information', { exact: true }).locator('..');
     this.shippingEmailInput = this.shippingSection.getByRole('textbox').first();
     this.countryInput = page.getByPlaceholder('Select Country');
-    this.placeOrderLink = page.getByRole('link', { name: /Place Order/ });
+    this.placeOrderLink = page.getByText('Place Order', { exact: true });
+    this.countrySuggestion = (country) => page.getByRole('button', { name: new RegExp(`${country}$`) });
   }
 
   /**
@@ -57,6 +59,14 @@ class CheckoutPage extends BasePage {
   }
 
   /**
+   * @param {string} cvv
+   * @returns {Promise<void>}
+   */
+  async fillCvv(cvv) {
+    await this.cvvInput.fill(cvv);
+  }
+
+  /**
    * @param {string} name
    * @returns {Promise<void>}
    */
@@ -86,8 +96,9 @@ class CheckoutPage extends BasePage {
    * @returns {Promise<void>}
    */
   async selectCountry(country) {
-    await this.countryInput.fill(country);
-    await this.page.getByText(country, { exact: true }).click();
+    await this.countryInput.fill('');
+    await this.countryInput.pressSequentially(country);
+    await this.countrySuggestion(country).click();
   }
 
   /** @returns {Promise<void>} */

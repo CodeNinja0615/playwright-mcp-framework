@@ -1,0 +1,102 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e282]:
+    - navigation [ref=e284]:
+      - generic [ref=e286]:
+        - link "Automation Automation Practice":
+          - /url: ""
+          - generic [ref=e287] [cursor=pointer]:
+            - heading "Automation" [level=3] [ref=e288]
+            - paragraph [ref=e289]: Automation Practice
+      - text: 
+      - link "Get Shortlisted by Recruiters - Take QA Skill Assessments on TechSmartHire" [ref=e290] [cursor=pointer]:
+        - /url: https://techsmarthire.com/
+      - list [ref=e291]:
+        - listitem [ref=e292] [cursor=pointer]:
+          - button " HOME" [ref=e293]:
+            - generic [ref=e294]: 
+            - text: HOME
+        - listitem
+        - listitem [ref=e295] [cursor=pointer]:
+          - button " ORDERS" [ref=e296]:
+            - generic [ref=e297]: 
+            - text: ORDERS
+        - listitem [ref=e298] [cursor=pointer]:
+          - button " Cart" [ref=e299]:
+            - generic [ref=e300]: 
+            - text: Cart
+        - listitem [ref=e301] [cursor=pointer]:
+          - button "Sign Out" [ref=e302]:
+            - generic [ref=e303]: 
+            - text: Sign Out
+    - table [ref=e305]:
+      - rowgroup [ref=e306]:
+        - row [ref=e307]:
+          - cell [ref=e308]:
+            - table [ref=e309]:
+              - rowgroup [ref=e310]:
+                - row [ref=e311]:
+                  - cell [ref=e312]
+                - row [ref=e313]:
+                  - cell [ref=e314]
+                - row [ref=e315]:
+                  - cell [ref=e316]
+                - row [ref=e317]:
+                  - cell [ref=e318]:
+                    - table [ref=e319]:
+                      - rowgroup [ref=e320]:
+                        - row [ref=e321]:
+                          - cell [ref=e322]:
+                            - table [ref=e323]:
+                              - rowgroup [ref=e324]:
+                                - row [ref=e325]:
+                                  - cell [ref=e326]:
+                                    - heading "Thankyou for the order." [level=1] [ref=e327]
+                                - row [ref=e328]:
+                                  - cell "You can see all the Orders in Orders History Page" [ref=e329]:
+                                    - text: You can see all the Orders in
+                                    - generic [ref=e330] [cursor=pointer]: Orders History Page
+                                - row [ref=e331]:
+                                  - cell "| 6a8cb24c21054ba465ef9716 |" [ref=e332]
+                - row [ref=e334]:
+                  - cell [ref=e335]
+                - row [ref=e336]:
+                  - cell [ref=e337]:
+                    - table [ref=e338]:
+                      - rowgroup [ref=e339]:
+                        - row [ref=e340]:
+                          - cell [ref=e341]
+                        - row [ref=e343]:
+                          - cell [ref=e344]:
+                            - img "Queen" [ref=e345]
+                          - 'cell "ADIDAS ORIGINAL Qty: 1" [ref=e346]':
+                            - generic [ref=e347]: ADIDAS ORIGINAL
+                            - generic [ref=e348]: "Qty: 1"
+                          - cell "$ 11500 Ready to Ship" [ref=e349]:
+                            - generic [ref=e350]: $ 11500
+                            - strong [ref=e352]: Ready to Ship
+                        - row [ref=e353]:
+                          - cell "Items in your order may ship separately. View your order for shipping updates." [ref=e354]: Items in your order may ship separately.View your order for shipping updates.
+                        - row [ref=e355]:
+                          - button "Click To Download Order Details in CSV" [ref=e356] [cursor=pointer]
+                - row [ref=e357]:
+                  - cell [ref=e358]
+                - row [ref=e359]:
+                  - cell [ref=e360]:
+                    - table [ref=e361]:
+                      - rowgroup [ref=e362]:
+                        - row [ref=e363]:
+                          - cell [ref=e364]
+                        - row [ref=e365]:
+                          - cell "Questions? We're on call." [ref=e366]
+                        - row [ref=e367]:
+                          - cell "Monday to Friday 9am - 9pm" [ref=e368]
+                        - row [ref=e369]:
+                          - cell "Saturday to Sunday 10am - 6pm" [ref=e370]
+                        - row [ref=e371]:
+                          - cell "dummywebsite@rahulshettyacademy.com" [ref=e372]
+                        - row [ref=e373]:
+                          - cell [ref=e374]
+                - row [ref=e375]:
+                  - cell [ref=e376]
+                - row
+  - generic "Order Placed Successfully" [ref=e378] [cursor=pointer]

@@ -1,0 +1,119 @@
+- generic [ref=e1]:
+  - generic [ref=e188]:
+    - navigation [ref=e190]:
+      - generic [ref=e192]:
+        - link "Automation Automation Practice":
+          - /url: ""
+          - generic [ref=e193] [cursor=pointer]:
+            - heading "Automation" [level=3] [ref=e194]
+            - paragraph [ref=e195]: Automation Practice
+      - text: 
+      - link "Get Shortlisted by Recruiters - Take QA Skill Assessments on TechSmartHire" [ref=e196] [cursor=pointer]:
+        - /url: https://techsmarthire.com/
+      - list [ref=e197]:
+        - listitem [ref=e198] [cursor=pointer]:
+          - button " HOME" [ref=e199]:
+            - generic [ref=e200]: 
+            - text: HOME
+        - listitem
+        - listitem [ref=e201] [cursor=pointer]:
+          - button " ORDERS" [ref=e202]:
+            - generic [ref=e203]: 
+            - text: ORDERS
+        - listitem [ref=e204] [cursor=pointer]:
+          - button " Cart 1" [ref=e205]:
+            - generic [ref=e206]: 
+            - text: Cart
+            - generic [ref=e207]: "1"
+        - listitem [ref=e208] [cursor=pointer]:
+          - button "Sign Out" [ref=e209]:
+            - generic [ref=e210]: 
+            - text: Sign Out
+    - generic [ref=e213]:
+      - generic [ref=e217]:
+        - generic [ref=e218]: ADIDAS ORIGINAL
+        - generic [ref=e219]: $ 11500
+        - generic [ref=e220]: "Quantity: 1"
+        - list [ref=e222]:
+          - listitem [ref=e223]: Apple phone
+      - generic [ref=e226]:
+        - generic [ref=e227]: Payment Method
+        - generic [ref=e228]:
+          - generic [ref=e229] [cursor=pointer]: Credit Card
+          - generic [ref=e230] [cursor=pointer]: Paypal
+          - generic [ref=e231] [cursor=pointer]: SEPA
+          - generic [ref=e232] [cursor=pointer]: Invoice
+        - generic [ref=e233]:
+          - generic [ref=e234]:
+            - generic [ref=e235]: Personal Information
+            - generic [ref=e237]:
+              - generic [ref=e239]:
+                - generic [ref=e240]: Credit Card Number
+                - textbox [ref=e241]: 4542 9931 9292 2293
+              - generic [ref=e242]:
+                - generic [ref=e243]:
+                  - generic [ref=e244]: Expiry Date
+                  - combobox [ref=e245]:
+                    - option "01" [selected]
+                    - option "02"
+                    - option "03"
+                    - option "04"
+                    - option "05"
+                    - option "06"
+                    - option "07"
+                    - option "08"
+                    - option "09"
+                    - option "10"
+                    - option "11"
+                    - option "12"
+                  - combobox [ref=e246]:
+                    - option "01"
+                    - option "02"
+                    - option "03"
+                    - option "04"
+                    - option "05"
+                    - option "06"
+                    - option "07"
+                    - option "08"
+                    - option "09"
+                    - option "10"
+                    - option "11"
+                    - option "12"
+                    - option "13"
+                    - option "14"
+                    - option "15"
+                    - option "16" [selected]
+                    - option "17"
+                    - option "18"
+                    - option "19"
+                    - option "20"
+                    - option "21"
+                    - option "22"
+                    - option "23"
+                    - option "24"
+                    - option "25"
+                    - option "26"
+                    - option "27"
+                    - option "28"
+                    - option "29"
+                    - option "30"
+                    - option "31"
+                - generic [ref=e247]:
+                  - generic [ref=e248]: CVV Code ?
+                  - textbox [ref=e249]: "123"
+              - generic [ref=e251]:
+                - generic [ref=e252]: Name on Card
+                - textbox [ref=e253]: Sameer Akhtar
+              - generic [ref=e254]:
+                - generic [ref=e255]:
+                  - generic [ref=e256]: Apply Coupon
+                  - textbox [ref=e257]
+                - button "Apply Coupon" [ref=e260] [cursor=pointer]
+          - generic [ref=e261]:
+            - generic [ref=e262]: Shipping Information
+            - generic [ref=e264]:
+              - generic [ref=e265]: akhtarsameer743@gmail.com
+              - textbox [ref=e266]: akhtarsameer743@gmail.com
+              - textbox "Select Country" [active] [ref=e269]: indIndia
+              - generic [ref=e270]: Place Order
+  - generic "Please Enter Full Shipping Information" [ref=e273] [cursor=pointer]

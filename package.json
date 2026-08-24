@@ -6,6 +6,7 @@
   "scripts": {
     "test:login": "playwright test tests/specs/login.spec.js",
     "test:login-direct": "playwright test tests/specs/login-direct.spec.js",
+    "test:complete-order": "playwright test tests/specs/complete-order.spec.js",
     "allure:open": "allure open artifacts/allure-report"
   },
   "keywords": [],
