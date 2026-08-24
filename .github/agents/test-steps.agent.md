@@ -136,9 +136,10 @@ Rules:
 
 ## 5. Test Data
 
-- Import test data from `tests/fixtures/test-data.js`; never hardcode magic strings for data that appears more than once.
+- Import test data from JSON files under `tests/testdata/` (e.g. `tests/testdata/test001.json`, `tests/testdata/test002.json`); never hardcode magic strings for data that appears more than once.
+- Load JSON test data with `require('../testdata/<file>.json') OR import data from '../testdata/<file>.json' with { type: 'json' }`.
+- Keep credentials (passwords, tokens, API keys) in a **separate** JSON file, e.g. `tests/testdata/credentials.json`, kept out of version control and populated from environment variables/secrets at test-run time — never mixed into the same JSON file as ordinary fixture data (names, addresses, product data, etc.), and never committed inline in a spec file.
 - Prefer generating unique data at runtime (e.g. via a UUID/timestamp helper) for anything that creates persistent records, to keep tests independent and re-runnable.
-- Sensitive data (passwords, tokens) come from environment variables/config, never committed inline.
 
 ---
 

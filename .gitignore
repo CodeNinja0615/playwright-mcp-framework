@@ -6,4 +6,5 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
-/tests/testdata/cred.json
+/tests/testdata/credentials.json
+/artifacts/

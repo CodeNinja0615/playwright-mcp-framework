@@ -4,7 +4,9 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test:login": "playwright test tests/specs/login.spec.js --headed"
+    "test:login": "playwright test tests/specs/login.spec.js",
+    "test:login-direct": "playwright test tests/specs/login-direct.spec.js",
+    "allure:open": "allure open artifacts/allure-report"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +14,8 @@
   "description": "",
   "devDependencies": {
     "@playwright/test": "^1.62.1",
-    "@types/node": "^26.2.0"
+    "@types/node": "^26.2.0",
+    "allure-commandline": "^2.43.0",
+    "allure-playwright": "^3.10.2"
   }
 }
