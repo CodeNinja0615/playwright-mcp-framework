@@ -1,0 +1,17 @@
+{
+  "name": "playwright-mcp-framework",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test:login": "playwright test tests/specs/login.spec.js --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0"
+  }
+}
