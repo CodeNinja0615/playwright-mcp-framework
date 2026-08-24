@@ -1,6 +1,8 @@
 // @ts-check
 import { defineConfig } from '@playwright/test';
 
+const isHeadless = process.env.HEADLESS !== 'false';
+
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
@@ -35,10 +37,25 @@ export default defineConfig({
     baseURL: 'https://rahulshettyacademy.com',
 
     /* Run headless by default; set HEADLESS=false for an interactive browser. */
-    headless: process.env.HEADLESS !== 'false',
+    headless: isHeadless,
+
+    /* Headless browsers have no native window; use a desktop-sized viewport instead. */
+    viewport: isHeadless ? { width: 1920, height: 1080 } : null,
+
+    /* Allow test environments with self-signed or otherwise invalid certificates. */
+    ignoreHTTPSErrors: true,
+
+    /* Grant the browser permissions commonly requested by web applications. */
+    permissions: [
+      'camera',
+      'clipboard-read',
+      'clipboard-write',
+      'geolocation',
+      'microphone',
+      'notifications',
+    ],
 
     /* Let headed Chromium use the maximized native window dimensions. */
-    viewport: null,
     launchOptions: {
       args: ['--start-maximized'],
     },
@@ -52,7 +69,9 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { viewport: null },
+      use: {
+        viewport: isHeadless ? { width: 1920, height: 1080 } : null,
+      },
     },
 
     // {
