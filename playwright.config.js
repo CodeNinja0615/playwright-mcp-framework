@@ -68,9 +68,13 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'chromium',
+      name: 'Microsoft Edge',
       use: {
         viewport: isHeadless ? { width: 1920, height: 1080 } : null,
+        launchOptions:{
+          channel: 'msedge'
+        },
+        userAgent: 'private'
       },
     },
 
